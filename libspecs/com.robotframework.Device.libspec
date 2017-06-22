@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keywordspec format="ROBOT" type="library" generated="20170622 18:23:55" name="com.robotframework.Device">
+<version></version>
+<scope>test case</scope>
+<namedargs>yes</namedargs>
+<doc>The most base type</doc>
+<kw name="Create Device">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Delete Device">
+<arguments>
+<arg>arg1</arg>
+<arg>arg2</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Equals">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get All Device Name">
+<arguments>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get Device Name">
+<arguments>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Get Port">
+<arguments>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Hash Code">
+<arguments>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Set Device Name">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="Set Port">
+<arguments>
+<arg>arg1</arg>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+<kw name="To String">
+<arguments>
+</arguments>
+<doc></doc>
+<tags>
+</tags>
+</kw>
+</keywordspec>

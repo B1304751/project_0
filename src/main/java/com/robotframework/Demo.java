@@ -10,11 +10,11 @@ public class Demo {
 		return a - b;
 	}
 	
-	public String division(int a, int b) {
+	public float division(int a, int b) {
 		try {
-			return String.valueOf((float)(a / b));
+			return a / b;
 		} catch (Exception e) {
-			return e.getMessage();
+			throw new ArithmeticException();
 		}
 	}
 	

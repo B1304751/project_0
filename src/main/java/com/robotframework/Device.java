@@ -1,5 +1,8 @@
 package com.robotframework;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -16,33 +19,34 @@ public class Device {
 	@Column(name = "DEVICE_NAME")
 	private String deviceName;
 	
+	private static List<String> list = new ArrayList<String>();
+	
 	public Device() {
 		
 	}
 
-	public String getAllDeviceName() {
+	public List<String> getAllDeviceName() throws Exception {
 		try {
-			if (getDeviceName() != null && getPort() != 0) {
-				return "[" + deviceName + "/" + port + "]";
+			if (list.size() > 0) {
+				return list;
 			} else {
-				throw new Exception("Empty device list");
+				throw new Exception("Empty list device");
 			}
 		} catch (Exception e) {
-			return e.getMessage();
+			 throw new Exception("Emoty list device");
 		}
 	}
 
 	public String CreateDevice(String name, int port) {
 		try {
 			if (name.length() >= 5 && port >= 1000) {
-				this.deviceName = name;
-				this.port = port;
+				list.add(name);
 				return "[" + name + "/" + port + "]" + " created";
 			} else {
-				throw new IllegalArgumentException("Invalid type arguments");
+				throw new IllegalArgumentException();
 			}
 		} catch (Exception e) {
-			return e.getMessage();
+			throw new IllegalArgumentException();
 			
 		}
 	}
@@ -50,15 +54,13 @@ public class Device {
 	public String DeleteDevice(String name, int port) {
       try {
     	  if (name.length() >= 5 && port >= 1000) {
-				this.deviceName = name;
-				this.port = port;
+				list.remove(list.indexOf(name));
 				return "[" + name + "/" + port + "]" + " deleted";
 			} else {
-				throw new IllegalArgumentException("Invalid type arguments");
+				throw new IllegalArgumentException();
 			}
 		} catch (Exception e) {
-			return e.getMessage();
-			
+			throw new IllegalArgumentException();
 		}
 	}
 

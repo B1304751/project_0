@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<projectConfiguration>
+    <configVersion>1</configVersion>
+    <relativeTo>PROJECT</relativeTo>
+    <referencedLibrary type="JAVA" name="com.robotframework.ConnectDatabase" path="C:/Users/lny/Desktop/project_0-master/project_0/src/test/resources/robotframework/libraries/ConnectDatabase.jar"/>
+    <referencedLibrary type="JAVA" name="com.robotframework.Demo" path="C:/Users/lny/Desktop/project_0-master/project_0/src/test/resources/robotframework/libraries/Demo.jar"/>
+    <referencedLibrary type="JAVA" name="com.robotframework.Device" path="C:/Users/lny/Desktop/project_0-master/project_0/src/test/resources/robotframework/libraries/Device.jar"/>
+    <referencedLibrary type="PYTHON" name="Selenium2Library" path="C:/jython2.7.0/Lib/site-packages/Selenium2Library"/>
+    <pythonpath/>
+    <classpath/>
+    <excludedForValidation/>
+    <isValidatedFileSizeCheckingEnabled>true</isValidatedFileSizeCheckingEnabled>
+    <validatedFileMaxSize>1024</validatedFileMaxSize>
+    <isReferencedLibrariesAutoReloadEnabled>true</isReferencedLibrariesAutoReloadEnabled>
+    <isReferencedLibrariesAutoDiscoveringEnabled>true</isReferencedLibrariesAutoDiscoveringEnabled>
+    <isLibrariesAutoDiscoveringSummaryWindowEnabled>false</isLibrariesAutoDiscoveringSummaryWindowEnabled>
+</projectConfiguration>
