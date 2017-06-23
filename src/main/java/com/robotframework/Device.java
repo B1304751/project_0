@@ -33,7 +33,7 @@ public class Device {
 				throw new Exception("Empty list device");
 			}
 		} catch (Exception e) {
-			 throw new Exception("Emoty list device");
+			 throw new Exception("Empty list device");
 		}
 	}
 

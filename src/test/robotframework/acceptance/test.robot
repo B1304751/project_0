@@ -20,5 +20,6 @@ Initalazing connection database
 Clean connection database
     ${dev_0}  Delete Device    AWSD1    8080
     Should Be Equal    '${dev_0}'    '[AWSD1/8080] deleted'    
-     ${dev_1}  Delete Device    AWSD2    8080
-     Should Be Equal    '${dev_1}'    '[AWSD2/8080] deleted'    
+    ${dev_1}  Delete Device    AWSD2    8080
+    Should Be Equal    '${dev_1}'    '[AWSD2/8080] deleted'
+    Run Keyword And Expect Error   Empty list device  Get All Device Name
