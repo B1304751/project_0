@@ -2,8 +2,7 @@
 Test Setup    Open Browser To Specify URL
 Test Teardown    Close Browser And Testing
 Library  Selenium2Library    
-Library  OperatingSystem
-Resource    user_data.robot
+Resource    User-Data.txt
 *** Variables ***
 ${BROWSER}  Chrome
 ${GOOGLE}   https://google.com
@@ -17,7 +16,8 @@ Automation web tetings with Selenium2Library
     Playing Song On Youtube
 *** Keywords ***
 Open Browser To Specify URL
-    Set Environment Variable    webdriver.chrome.driver    ${EXECDIR}/src/test/resources/robotframework/library/chromedriver.exe
+    #Set Environment Variable    webdriver.chrome.driver    ${EXECDIR}/src/test/resources/robotframework/libraries/chromedriver.exe
+    Log   ${EXECDIR}
     Open Browser  ${GOOGLE}  ${BROWSER}
     Maximize Browser Window
 Close Browser And Testing
